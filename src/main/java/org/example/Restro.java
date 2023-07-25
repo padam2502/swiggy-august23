@@ -1,15 +1,16 @@
 package org.example;
 import java.util.List;
 public class Restro {
-    private int restroid;
-    private String name;
-    private List dish
-    private location
-    public int getRestroid() {
+     String restroid;
+     String name;
+     List<Dish> menu;
+     Location location;
+
+    public String getRestroid() {
         return restroid;
     }
 
-    public void setRestroid(int restroid) {
+    public void setRestroid(String restroid) {
         this.restroid = restroid;
     }
 
@@ -21,5 +22,29 @@ public class Restro {
         this.name = name;
     }
 
+    public List<Dish> getMenu() {
+        return menu;
+    }
 
+    public void setMenu(List<Dish> menu) {
+        this.menu = menu;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Restro{" +
+                "restroid='" + restroid + '\'' +
+                ", name='" + name + '\'' +
+                ", menu=" + menu +
+                ", location=" + location +
+                '}';
+    }
 }

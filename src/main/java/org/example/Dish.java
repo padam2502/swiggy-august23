@@ -1,10 +1,10 @@
 package org.example;
 
 public class Dish {
-    private int dishid;
-    private String name;
-    private float price;
-    private int restroid;
+     String dishid;
+     String name;
+     float price;
+     String restroid;
 
     public float getPrice() {
         return price;
@@ -14,19 +14,19 @@ public class Dish {
         this.price = price;
     }
 
-    public int getDishid() {
+    public String getDishid() {
         return dishid;
     }
 
-    public void setDishid(int dishid) {
+    public void setDishid(String dishid) {
         this.dishid = dishid;
     }
 
-    public int getRestroid() {
+    public String getRestroid() {
         return restroid;
     }
 
-    public void setRestroid(int restroid) {
+    public void setRestroid(String restroid) {
         this.restroid = restroid;
     }
 
